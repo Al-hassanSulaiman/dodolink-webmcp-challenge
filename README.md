@@ -25,6 +25,15 @@ another public-compatible API origin during development, set
 `globalThis.__DODOLINK_API_BASE__` before loading `src/app.js`. Only use a
 public API origin; this demo must never receive credentials.
 
+## Project structure
+
+- `server.mjs` — dependency-free static server and the small page shell
+- `src/webmcp.js` — imperative WebMCP tool registrations
+- `src/api.js` — public marketplace queries and shortlist engine
+- `src/app.js` — manual fallback and visible human-review handoff
+- `styles.css` — responsive presentation
+- `docs/CHALLENGE_SUBMISSION.md` — suggested submission explanation
+
 ## Test WebMCP
 
 WebMCP is experimental. Use ChatGPT's WebMCP-enabled in-app browser, or enable
